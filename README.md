@@ -1,109 +1,156 @@
 # ADSPARK — Creative Advertising & Digital Marketing Studio
 
-> A refined, compact, and responsive digital advertising and marketing studio website built with **React** + **Vite**, featuring **Three.js 3D motion** and **short looping campaign videos**. Inspired by the design philosophy of **Squarespace**, **Locomotive**, and **Pentagram**.
+ADSPARK is a premium digital advertising and marketing studio website built with React and Vite.
 
----
+The project focuses on an editorial, art-directed experience with responsive layouts, interactive navigation, campaign showcases, subtle motion, and a streamlined project inquiry flow.
 
-## ⚡ Core Architecture: Refined, Compact & Responsive
+## Live Demo
 
-This version is structured into **8 intentional, high-impact sections** (no repetitive fluff, no 12-section fatigue, no card-grid templates):
+**[View ADSPARK Live](YOUR_VERCEL_URL)**
 
-1. **NAVBAR ([`Navbar.jsx`](./src/components/Navbar.jsx))**
-   - Height: 72px compact header with solid `#F4F1EA` background
-   - Desktop: `ADSPARK`, `Work`, `Services`, `Solutions`, `FAQ`, `START A PROJECT →`
-   - Mobile: Smooth animated dropdown drawer with zero horizontal overflow
+## Overview
 
-2. **HERO / ZERO SECTION ([`Hero.jsx`](./src/components/Hero.jsx) + [`Hero3D.jsx`](./src/components/Hero3D.jsx))**
-   - Desktop: Balanced 1 viewport height layout (`min-height: calc(100vh - 72px)`)
-   - Eyebrow: `INDEPENDENT CREATIVE & DIGITAL STUDIO`
-   - Main Headline:
-     ```
-     WE MAKE
-     BRANDS
-     IMPOSSIBLE TO IGNORE.
-     ```
-   - Concise copy: *"Strategy, creative and digital campaigns designed to turn attention into meaningful growth."*
-   - Buttons: `START A PROJECT` & `VIEW OUR WORK`
-   - **3D Visual Centerpiece:** Lightweight Three.js procedural campaign monolith plaque with mouse parallax, slow ambient rotation, terracotta geometric accents, and an integrated 2-3s looping muted campaign video badge.
+ADSPARK combines strategy, creative advertising, social content, performance marketing, and digital experiences into a single responsive studio website.
 
-3. **ABOUT + SERVICES ([`AboutServices.jsx`](./src/components/AboutServices.jsx))**
-   - Combined compact section with editorial statement:
-     *"Strategy meets creative to build brands people remember."*
-   - 5 compact horizontal rows:
-     - `01 Brand Strategy`
-     - `02 Creative Advertising`
-     - `03 Social & Content`
-     - `04 Performance Marketing`
-     - `05 Digital Experiences`
-   - Interactive hover background shift, arrow toggle, and inline deliverables drawer.
+The design follows a minimal editorial direction with a warm neutral palette, large typography, generous spacing, and restrained interactions rather than a traditional SaaS-style interface.
 
-4. **FEATURED CAMPAIGN / 3D MEDIA ([`FeaturedCampaign.jsx`](./src/components/FeaturedCampaign.jsx))**
-   - Heading: `SELECTED CAMPAIGN`
-   - Large media composition with 2-3s looping muted video (`AURA BOTANICA`)
-   - Minimal information bar: `CAMPAIGN 01`, `"Built to stop the scroll."`, verified metrics (`4.4x ROAS`, `+215% Revenue Lift`, `14.2M Reach`)
-   - `VIEW CAMPAIGN →` button opening the detailed case study modal.
+## Features
 
-5. **PRODUCTS / SOLUTIONS ([`Solutions.jsx`](./src/components/Solutions.jsx))**
-   - 3 clean editorial blocks:
-     - `01 BRAND` (Strategy, identity & campaign direction)
-     - `02 GROWTH` (Performance marketing & acquisition)
-     - `03 DIGITAL` (Web experiences & digital campaigns)
-   - Large typography, capability inclusion tags, and direct inquiry links.
+- Responsive desktop, tablet, and mobile layouts
+- Compact animated mobile navigation
+- Interactive hero section with motion and 3D visual elements
+- Featured campaign showcase
+- Campaign case-study modal
+- Interactive services section
+- Solutions / capabilities section
+- FAQ accordion
+- Project requirements and inquiry form
+- Client-side form validation
+- Subtle hover and interaction effects
+- Reduced-motion accessibility support
+- Responsive touch interactions
+- Clean editorial visual system
+- Vercel-ready production build
 
-6. **FAQ ([`FAQ.jsx`](./src/components/FAQ.jsx))**
-   - Concise 5-question editorial accordion:
-     1. What does AdSpark do?
-     2. How does a project begin?
-     3. Which platforms do you work with?
-     4. How long does a campaign take?
-     5. How can I start a project?
-   - Clean horizontal rows with `+ / −`, smooth animation, no boxy cards.
+## Sections
 
-7. **CONTACT / REQUIREMENT ([`Contact.jsx`](./src/components/Contact.jsx))**
-   - Headline: `"LET'S MAKE SOMETHING WORTH NOTICING."`
-   - Compact line-bordered form: Name, Email, Company, Service, Budget, Project Requirements.
-   - Frontend validation, loading state, and refined confirmation screen.
+### 01 — Navigation
 
-8. **FOOTER ([`Footer.jsx`](./src/components/Footer.jsx))**
-   - Clean brand wordmark `ADSPARK`, tagline, navigation, social links, copyright, and legal modal links.
+- ADSPARK wordmark
+- Work
+- Services
+- Solutions
+- FAQ
+- Start a Project CTA
+- Responsive mobile dropdown navigation
 
----
+### 02 — Hero
 
-## 🎨 Design System & Palette
+The opening section introduces the studio with the headline:
 
-- **Warm Off-White:** `#F4F1EA`
-- **Deep Black:** `#111111`
-- **Dark Charcoal:** `#1C1C1A`
-- **Muted Terracotta:** `#C84B35` (used sparingly as accent)
-- **Soft Beige:** `#D9D1C3`
-- **Strictly Prohibited:** Zero blue, purple, cyan, neon, or glassmorphic blurs.
+> **WE MAKE BRANDS IMPOSSIBLE TO IGNORE.**
 
----
+It combines concise studio messaging with an interactive visual centerpiece.
 
-## 📱 Mobile Responsiveness Tested & Verified
+### 03 — About & Services
 
-Optimized across all screen widths:
-- **320px & 375px:** Recomposed hero (Headline ↓ short text ↓ CTA ↓ 3D / video visual), single-column stacked forms and blocks, zero horizontal scrollbar (`overflow-x: hidden`).
-- **390px & 480px:** Scaled typography and comfortable touch targets.
-- **768px & 1024px:** Clean tablet rebalancing.
-- **1200px & 1920px:** Balanced two-column layouts, 1-viewport-height hero, smooth cursor parallax.
+A compact editorial introduction followed by five service areas:
 
----
+- Brand Strategy
+- Creative Advertising
+- Social & Content
+- Performance Marketing
+- Digital Experiences
 
-## 🛠️ Commands & Deployment
+Each service can be expanded to reveal additional information.
+
+### 04 — Featured Campaign
+
+A selected campaign presentation featuring:
+
+- Campaign media
+- Campaign information
+- Performance metrics
+- Interactive case-study modal
+
+### 05 — Solutions
+
+Three primary capability areas:
+
+- **Brand** — Strategy, identity & campaign direction
+- **Growth** — Performance marketing & acquisition
+- **Digital** — Web experiences & digital campaigns
+
+### 06 — FAQ
+
+A responsive accordion covering common questions about:
+
+- Services
+- Project process
+- Platforms
+- Campaign timelines
+- Starting a project
+
+### 07 — Contact
+
+A project inquiry section with fields for:
+
+- Name
+- Email
+- Company
+- Service
+- Budget
+- Project Requirements
+
+Includes frontend validation, loading feedback, and confirmation state.
+
+### 08 — Footer
+
+Includes:
+
+- ADSPARK branding
+- Navigation
+- Social links
+- Copyright
+- Legal information
+
+## Design System
+
+| Element | Value |
+|---|---|
+| Warm Off-White | `#F4F1EA` |
+| Deep Black | `#111111` |
+| Dark Charcoal | `#1C1C1A` |
+| Muted Terracotta | `#C84B35` |
+| Soft Beige | `#D9D1C3` |
+
+The interface intentionally avoids excessive gradients, neon colors, glassmorphism, and generic SaaS visual patterns.
+
+## Tech Stack
+
+- **React**
+- **Vite**
+- **JavaScript / JSX**
+- **CSS**
+- **Three.js**
+- **Lucide Icons**
+- **Vercel**
+
+## Responsive Design
+
+The website is designed for:
+
+- Mobile: `320px+`
+- Tablet: `768px+`
+- Desktop: `1200px+`
+- Large screens: `1920px+`
+
+The mobile experience includes a compact navigation panel, responsive typography, stacked layouts, touch-friendly controls, and protection against horizontal overflow.
+
+## Getting Started
+
+### 1. Clone the repository
 
 ```bash
-# Start local development server
-npm run dev
-
-# Run oxlint static analysis (0 errors, 0 warnings)
-npm run lint
-
-# Build production bundle (optimized three.js chunking, 0 errors)
-npm run build
-
-# Preview build locally
-npm run preview
-```
-
-Pre-configured with [`vercel.json`](./vercel.json) for 1-click Vercel deployment.
+git clone https://github.com/prakharupadhyay03/adspark-digital-agency.git
+cd adspark-digital-agency
