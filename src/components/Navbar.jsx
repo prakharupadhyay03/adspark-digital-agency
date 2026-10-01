@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, ArrowUpRight, ArrowRight } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Work', href: '#work' },
@@ -11,6 +11,8 @@ const NAV_LINKS = [
 export default function Navbar({ onStartProject }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const toggleBtnRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,41 @@ export default function Navbar({ onStartProject }) {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close on click outside and on Escape key
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        toggleBtnRef.current &&
+        !toggleBtnRef.current.contains(e.target)
+      ) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setMobileMenuOpen(false);
+        if (toggleBtnRef.current) {
+          toggleBtnRef.current.focus();
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [mobileMenuOpen]);
 
   const handleNavClick = (e, href) => {
     e.preventDefault();
@@ -49,7 +86,7 @@ export default function Navbar({ onStartProject }) {
           <span className="brand-title">ADSPARK</span>
         </a>
 
-        {/* Center Links */}
+        {/* Center Links (Desktop) */}
         <nav className="nav-desktop-links" aria-label="Main Navigation">
           <ul className="nav-items-row">
             {NAV_LINKS.map((link) => (
@@ -66,7 +103,7 @@ export default function Navbar({ onStartProject }) {
           </ul>
         </nav>
 
-        {/* Right CTA */}
+        {/* Right CTA & Mobile Toggle */}
         <div className="nav-cta-wrapper">
           <button 
             onClick={onStartProject}
@@ -78,51 +115,54 @@ export default function Navbar({ onStartProject }) {
           </button>
 
           <button 
+            ref={toggleBtnRef}
             type="button" 
             className="hamburger-toggle-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav-panel"
+            aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
-      {/* Clean Mobile Dropdown Menu */}
-      <div className={`compact-mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
-        <div className="container mobile-drawer-inner">
-          <ul className="mobile-drawer-links">
-            {NAV_LINKS.map((link, idx) => (
-              <li key={link.label} className="mobile-drawer-item">
-                <span className="drawer-num">0{idx + 1}</span>
-                <a 
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="drawer-anchor"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+      {/* Compact Premium Mobile Dropdown Panel */}
+      <nav 
+        ref={menuRef}
+        id="mobile-nav-panel"
+        className={`compact-mobile-dropdown ${mobileMenuOpen ? 'open' : ''}`}
+        aria-label="Mobile Navigation"
+      >
+        <ul className="mobile-dropdown-list">
+          {NAV_LINKS.map((link, idx) => (
+            <li key={link.label} className="mobile-dropdown-item">
+              <a 
+                href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="mobile-dropdown-link"
+              >
+                <span className="mobile-dropdown-num">0{idx + 1}</span>
+                <span className="mobile-dropdown-text">{link.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
 
-          <div className="mobile-drawer-bottom">
-            <button 
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onStartProject();
-              }}
-              className="btn-editorial-solid-full"
-            >
-              START A PROJECT →
-            </button>
-            <div className="drawer-direct-contact">
-              <span>hello@adspark.com</span>
-              <span>+91 98765 43210</span>
-            </div>
-          </div>
+        <div className="mobile-dropdown-cta-wrap">
+          <button 
+            onClick={() => {
+              setMobileMenuOpen(false);
+              onStartProject();
+            }}
+            className="btn-mobile-dropdown-cta"
+          >
+            <span>START A PROJECT</span>
+            <ArrowRight size={14} />
+          </button>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

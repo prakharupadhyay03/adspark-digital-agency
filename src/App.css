@@ -196,93 +196,125 @@
   padding: 4px;
 }
 
-/* Mobile Drawer */
-.compact-mobile-drawer {
+/* Compact Premium Mobile Dropdown Panel */
+.compact-mobile-dropdown {
   display: none;
   position: fixed;
-  top: 72px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 72px);
+  top: 78px;
+  right: 12px;
+  width: calc(100% - 24px);
+  max-width: 320px;
   background-color: var(--bg-primary);
-  border-top: 1px solid var(--border-light);
-  z-index: 850;
-  overflow-y: auto;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  box-shadow: 0 16px 36px rgba(17, 17, 17, 0.12), 0 2px 8px rgba(17, 17, 17, 0.04);
+  z-index: 950;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-8px);
-  transition: all var(--transition-smooth);
+  transition: opacity 200ms ease-out,
+              transform 200ms ease-out,
+              visibility 200ms ease-out;
+  pointer-events: none;
 }
 
-.compact-mobile-drawer.open {
+.compact-mobile-dropdown.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  pointer-events: auto;
 }
 
-.mobile-drawer-inner {
-  padding-top: 36px;
-  padding-bottom: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(100vh - 120px);
-}
-
-.mobile-drawer-links {
+.mobile-dropdown-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 0;
-  margin: 0;
 }
 
-.mobile-drawer-item {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
+.mobile-dropdown-item {
   border-bottom: 1px solid var(--border-light);
-  padding-bottom: 14px;
 }
 
-.drawer-num {
-  font-family: var(--font-serif);
-  font-size: 0.8125rem;
+.mobile-dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.mobile-dropdown-link:hover,
+.mobile-dropdown-link:active {
+  background-color: var(--bg-soft-beige);
   color: var(--accent-terracotta);
 }
 
-.drawer-anchor {
+.mobile-dropdown-num {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--accent-terracotta);
+  min-width: 22px;
+}
+
+.mobile-dropdown-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   color: var(--text-primary);
-  text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
-.mobile-drawer-bottom {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.mobile-dropdown-link:hover .mobile-dropdown-text,
+.mobile-dropdown-link:active .mobile-dropdown-text {
+  color: var(--accent-terracotta);
+  transform: translateX(2px);
 }
 
-.btn-editorial-solid-full {
+.mobile-dropdown-cta-wrap {
+  padding: 12px 14px 14px 14px;
+  background-color: var(--bg-primary);
+}
+
+.btn-mobile-dropdown-cta {
   width: 100%;
-  padding: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
   background-color: var(--bg-dark);
   color: var(--bg-primary);
-  font-size: 0.84rem;
+  border: 1px solid var(--bg-dark);
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  border: none;
   cursor: pointer;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
 }
 
-.drawer-direct-contact {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  color: var(--text-muted);
+.btn-mobile-dropdown-cta svg {
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-mobile-dropdown-cta:hover,
+.btn-mobile-dropdown-cta:active {
+  background-color: var(--accent-terracotta);
+  border-color: var(--accent-terracotta);
+  color: #ffffff;
+}
+
+.btn-mobile-dropdown-cta:hover svg,
+.btn-mobile-dropdown-cta:active svg {
+  transform: translateX(3px);
 }
 
 /* --------------------------------------------------------------------------
@@ -2186,7 +2218,7 @@ a.f-val:hover {
   .hamburger-toggle-btn {
     display: block;
   }
-  .compact-mobile-drawer {
+  .compact-mobile-dropdown {
     display: block;
   }
   .service-row-main {
@@ -2352,7 +2384,8 @@ a.f-val:hover {
   .faq-plus-symbol,
   .btn-hero-primary,
   .btn-view-campaign-action,
-  .btn-start-conversation {
+  .btn-start-conversation,
+  .compact-mobile-dropdown {
     transform: none !important;
   }
 }
