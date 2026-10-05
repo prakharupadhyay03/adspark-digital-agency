@@ -15,7 +15,7 @@ export default function AgencyPhilosophyModal({ isOpen, onClose, onScrollToConta
           <span className="badge">Our Agency Manifesto</span>
           <h2 id="modal-philosophy-title" className="modal-title">Creative Firepower Meets Quantitative Precision</h2>
           <p className="modal-desc">
-            Founded on the conviction that traditional advertising agencies are too slow and pure media agencies are too bland, AdSpark merges both disciplines into a singular, high-velocity growth engine.
+            Founded on the conviction that traditional advertising agencies are too slow and pure media agencies are too bland, RV Canvas merges both disciplines into a singular, high-velocity growth engine.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function AgencyPhilosophyModal({ isOpen, onClose, onScrollToConta
             }} 
             className="btn btn-primary"
           >
-            <span>Partner With AdSpark</span>
+            <span>Partner With RV Canvas</span>
             <ArrowRight size={16} />
           </button>
           <button onClick={onClose} className="btn btn-secondary">

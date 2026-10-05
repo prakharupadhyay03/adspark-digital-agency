@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
             <span>The Agency Difference</span>
           </div>
           <h2 className="section-title">
-            Why Brands Choose <span className="accent-text">AdSpark</span>
+            Why Brands Choose <span className="accent-text">RV Canvas</span>
           </h2>
           <p className="section-subtitle">
             We operate as an uncompromising extension of your executive growth team. No vanity metrics, no bloated agency retainers—just proven business outcomes.

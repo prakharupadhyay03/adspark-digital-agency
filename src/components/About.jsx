@@ -23,7 +23,7 @@ export default function About({ onStartProject }) {
             </p>
 
             <p className="narrative-body">
-              At AdSpark, we believe true commercial growth starts with a distinct point of view. We combine rigorous consumer research and quantitative media buying with uncompromising creative art direction. We build campaigns people talk about, remember, and buy from.
+              At RV Canvas, we believe true commercial growth starts with a distinct point of view. We combine rigorous consumer research and quantitative media buying with uncompromising creative art direction. We build campaigns people talk about, remember, and buy from.
             </p>
 
             <div className="about-principles-compact">
@@ -60,7 +60,7 @@ export default function About({ onStartProject }) {
             <div className="about-image-frame">
               <img 
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80" 
-                alt="AdSpark Creative Direction and Studio Atmosphere"
+                alt="RV Canvas Creative Direction and Studio Atmosphere"
                 className="about-still-img"
                 loading="lazy"
               />

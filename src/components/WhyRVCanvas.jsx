@@ -1,7 +1,5 @@
-import React from 'react';
-import { WHY_ADSPARK } from '../data/agencyData';
-
-export default function WhyAdSpark() {
+export default function WhyRVCanvas() {
+  const items = [];
   return (
     <section className="editorial-section why-editorial-section">
       <div className="container">
@@ -11,7 +9,7 @@ export default function WhyAdSpark() {
             <div className="eyebrow-label">OUR DISTINCT POSITION</div>
             <h2 className="why-hero-text">
               WHY<br />
-              <span className="serif-italic">ADSPARK?</span>
+              <span className="serif-italic">RV CANVAS?</span>
             </h2>
             <p className="why-lead-paragraph">
               We reject the false dichotomy between pure creative vanity and uninspired performance grinding. We believe the biggest commercial growth happens at their intersection.
@@ -20,7 +18,7 @@ export default function WhyAdSpark() {
 
           {/* Right Column: Typographic Principles List */}
           <div className="why-right-list-column">
-            {WHY_ADSPARK.map((item, idx) => (
+            {items.map((item, idx) => (
               <div key={item.title} className="why-principle-item">
                 <div className="principle-top-row">
                   <span className="principle-index">0{idx + 1}</span>

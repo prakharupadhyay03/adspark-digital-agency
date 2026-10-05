@@ -81,9 +81,14 @@ export default function Navbar({ onStartProject }) {
           href="#hero" 
           onClick={(e) => handleNavClick(e, '#hero')} 
           className="brand-logo-link"
-          aria-label="ADSPARK Home"
+          aria-label="RV CANVAS Home"
         >
-          <span className="brand-title">ADSPARK</span>
+          <img 
+            src="/rv-canvas-logo.png" 
+            alt="RV CANVAS" 
+            className="brand-logo-img" 
+          />
+          <span className="brand-text">RV CANVAS</span>
         </a>
 
         {/* Center Links (Desktop) */}

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSPARK — COMPACT EDITORIAL AGENCY STYLES
+   RV CANVAS — COMPACT EDITORIAL AGENCY STYLES
    Curated Palette:
    Background: #F4F1EA | Black: #111111 | Charcoal: #1C1C1A
    Accent: #C84B35 (Terracotta) | Muted Beige: #D9D1C3
@@ -92,6 +92,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  gap: 12px;
 }
 
 .brand-title {
@@ -100,6 +101,31 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   color: var(--text-primary);
+}
+
+.brand-logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.brand-text {
+  font-family: var(--font-sans);
+  font-size: 0.94rem; /* 15px */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-logo-link:hover .brand-logo-img {
+  opacity: 0.85;
 }
 
 .nav-desktop-links {
@@ -2313,9 +2339,29 @@ a.f-val:hover {
     width: 100%;
     justify-content: center;
   }
+  .brand-logo-link {
+    gap: 9px;
+  }
+  .brand-logo-img {
+    height: 34px;
+  }
+  .brand-text {
+    font-size: 0.84rem;
+    letter-spacing: 0.08em;
+  }
 }
 
 @media (max-width: 375px) {
+  .brand-logo-link {
+    gap: 7px;
+  }
+  .brand-logo-img {
+    height: 30px;
+  }
+  .brand-text {
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+  }
   .hero-giant-title {
     font-size: 2.15rem;
   }

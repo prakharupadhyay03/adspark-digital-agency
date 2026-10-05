@@ -1,7 +1,7 @@
-// Compact Editorial Data for ADSPARK
+// Compact Editorial Data for RV CANVAS
 
 export const STUDIO_META = {
-  name: "ADSPARK",
+  name: "RV CANVAS",
   tagline: "Creative ideas. Meaningful growth.",
   heroLabel: "INDEPENDENT CREATIVE & DIGITAL STUDIO",
   heroTitle: ["WE MAKE", "BRANDS", "IMPOSSIBLE TO IGNORE."],
@@ -49,7 +49,7 @@ export const FEATURED_CAMPAIGN = {
   description: "A multi-channel global launch repositioning organic fragrance from standard botanical cosmetics into an architectural luxury experience. We engineered concept-first film assets, high-velocity social hooks, and precision paid acquisition funnels.",
   videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-black-clothes-posing-41724-large.mp4",
   posterUrl: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
-  quote: "AdSpark delivered an unmistakable creative signature that transformed our market entry into an instant sell-out.",
+  quote: "RV Canvas delivered an unmistakable creative signature that transformed our market entry into an instant sell-out.",
   clientAuthor: "Elena Vance, Global Brand Director at Aura Botanica",
   metrics: [
     { label: "Return on Ad Spend", value: "4.4x" },
@@ -84,8 +84,8 @@ export const SOLUTIONS = [
 
 export const FAQS = [
   {
-    question: "What does AdSpark do?",
-    answer: "AdSpark is an independent creative advertising and digital studio. We build strategic brand campaigns, social content, performance marketing funnels, and high-converting digital web experiences for ambitious companies.",
+    question: "What does RV Canvas do?",
+    answer: "RV Canvas is an independent creative advertising and digital studio. We build strategic brand campaigns, social content, performance marketing funnels, and high-converting digital web experiences for ambitious companies.",
   },
   {
     question: "How does a project begin?",
@@ -101,6 +101,6 @@ export const FAQS = [
   },
   {
     question: "How can I start a project?",
-    answer: "Submit your details through our contact form below or email hello@adspark.com directly. A Senior Partner will review your goals and schedule a 30-minute discovery conversation within 24 hours.",
+    answer: "Submit your details through our contact form below or email hello@rvcanvas.com directly. A Senior Partner will review your goals and schedule a 30-minute discovery conversation within 24 hours.",
   },
 ];

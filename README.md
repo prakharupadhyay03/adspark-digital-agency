@@ -1,4 +1,4 @@
-# ADSPARK — Creative Advertising & Digital Marketing Studio
+# RV CANVAS — Creative Advertising & Digital Marketing Studio
 
 ADSPARK is a premium digital advertising and marketing studio website built with React and Vite.
 
@@ -8,7 +8,10 @@ The project focuses on an editorial, art-directed experience with responsive lay
 
 **[View ADSPARK Live](https://adspark-digital-agency.vercel.app/)**
 
-## Overview
+1. **NAVBAR ([`Navbar.jsx`](./src/components/Navbar.jsx))**
+   - Height: 72px compact header with solid `#F4F1EA` background
+   - Desktop: `RV CANVAS` (Logo mark), `Work`, `Services`, `Solutions`, `FAQ`, `START A PROJECT →`
+   - Mobile: Smooth animated dropdown drawer with zero horizontal overflow
 
 ADSPARK combines strategy, creative advertising, social content, performance marketing, and digital experiences into a single responsive studio website.
 
@@ -32,17 +35,19 @@ The design follows a minimal editorial direction with a warm neutral palette, la
 - Clean editorial visual system
 - Vercel-ready production build
 
-## Sections
+6. **FAQ ([`FAQ.jsx`](./src/components/FAQ.jsx))**
+   - Concise 5-question editorial accordion:
+     1. What does RV Canvas do?
+     2. How does a project begin?
+     3. Which platforms do you work with?
+     4. How long does a campaign take?
+     5. How can I start a project?
+   - Clean horizontal rows with `+ / −`, smooth animation, no boxy cards.
 
 ### 01 — Navigation
 
-- ADSPARK wordmark
-- Work
-- Services
-- Solutions
-- FAQ
-- Start a Project CTA
-- Responsive mobile dropdown navigation
+8. **FOOTER ([`Footer.jsx`](./src/components/Footer.jsx))**
+   - Clean brand identity `RV CANVAS`, tagline, navigation, social links, copyright, and legal modal links.
 
 ### 02 — Hero
 
