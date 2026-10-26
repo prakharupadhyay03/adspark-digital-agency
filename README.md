@@ -1,51 +1,47 @@
-# RV CANVAS — Creative Advertising & Digital Marketing Studio
+# ADSPARK — Creative Advertising & Digital Marketing Studio
 
-RV CANVAS is a premium digital advertising and marketing studio website built with React and Vite.
+ADSPARK is a premium digital advertising and marketing studio website built with React and Vite.
 
-The project focuses on an editorial, art-directed experience with responsive layouts, interactive navigation, campaign showcases, subtle motion, and a streamlined project inquiry flow.
+The project delivers an editorial, art-directed experience featuring responsive layouts, interactive navigation, campaign showcases, subtle motion, and a streamlined project inquiry flow.
 
 ## Live Demo
 
-[View RV CANVAS Live](https://adspark-digital-agency.vercel.app/)
+[View ADSPARK Live](https://adspark-digital-agency.vercel.app/)
 
 ## Overview
 
-RV CANVAS combines strategy, creative advertising, social content, performance marketing, and digital experiences into a single responsive studio website.
+ADSPARK combines brand strategy, creative advertising, social content, performance marketing, and bespoke digital experiences into a single responsive studio website.
 
-The design follows a minimal editorial direction with a warm neutral palette, large typography, generous spacing, and restrained interactions rather than a traditional SaaS-style interface.
+The design follows a minimal editorial direction with a warm neutral palette, authoritative typography, generous spacing, and restrained interactions rather than a traditional generic SaaS interface.
 
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts
-- Compact animated mobile navigation
-- Interactive hero section with motion and 3D visual effects
-- Featured campaign showcase
-- Campaign case-study modal
-- Interactive services section
-- Solutions and capabilities section
-- FAQ accordion
-- Project requirements and inquiry form
-- Client-side form validation
-- Subtle hover and interaction effects
-- Reduced-motion accessibility support
-- Responsive touch interactions
-- Clean editorial visual system
-- Vercel-ready production build
+- Compact animated mobile navigation with backdrop dismiss
+- Interactive hero section with CSS-based 3D motion and perspective depth
+- Featured campaign showcase with video and key metrics
+- Interactive case-study modal with campaign analysis
+- Expandable services section with modal breakdowns
+- Strategic solutions and capabilities matrix
+- Responsive FAQ accordion
+- Project requirement selector and inquiry contact form
+- Client-side form validation and submission feedback
+- Subtle hover states and micro-interactions
+- Reduced-motion accessibility support (`prefers-reduced-motion`)
+- Touch-optimized mobile interactions
+- Unified editorial design system tokens
+- Vercel-ready production build configuration
 
 ## Website Sections
 
 ### 01 — Navigation
 
-The navigation includes:
+The header features:
 
-- RV CANVAS logo and brand identity
-- Work
-- Services
-- Solutions
-- FAQ
-- Start a Project
-
-The mobile navigation uses a compact animated dropdown with responsive spacing and protection against horizontal overflow.
+- ADSPARK vector logo mark and brand name
+- Desktop anchor navigation (Work, Services, Solutions, FAQ)
+- "Start a Project" call-to-action
+- Accessible hamburger drawer with numbered mobile links
 
 ### 02 — Hero
 
@@ -53,32 +49,31 @@ The opening section introduces the studio with the headline:
 
 > **WE MAKE BRANDS IMPOSSIBLE TO IGNORE.**
 
-It combines concise studio messaging with an interactive visual centerpiece and subtle motion effects.
+It combines concise studio positioning with an interactive CSS 3D monolith card that responds to cursor movements and device orientation.
 
 ### 03 — About & Services
 
-A compact editorial introduction followed by five core service areas:
+A compact editorial manifesto followed by five core service areas:
 
-- Brand Strategy
-- Creative Advertising
-- Social & Content
-- Performance Marketing
-- Digital Experiences
+- **Brand Strategy** — Market whitespace discovery and positioning
+- **Creative Advertising** — Concept-driven campaign art direction
+- **Social & Content** — Editorial short-form production and creator seeding
+- **Performance Marketing** — Quantitative media buying across Google, Meta & TikTok
+- **Digital Experiences** — Bespoke editorial digital flagships
 
-Each service can be expanded to reveal additional information.
+Each service features an interactive drawer detailing methodology and deliverables.
 
 ### 04 — Featured Campaign
 
-A selected campaign presentation featuring:
+A selected campaign presentation for *Aura Botanica* featuring:
 
-- Campaign media
-- Campaign information
-- Performance metrics
-- Interactive case-study modal
+- Looping campaign video and art direction poster
+- Return on Ad Spend (4.4x), direct revenue lift, and reach metrics
+- Interactive modal examining campaign strategy, creative execution, and results
 
 ### 05 — Solutions
 
-Three primary capability areas:
+Three primary capability pillars:
 
 - **Brand** — Strategy, identity & campaign direction
 - **Growth** — Performance marketing & acquisition
@@ -86,86 +81,119 @@ Three primary capability areas:
 
 ### 06 — FAQ
 
-A responsive accordion covering common questions about:
+An editorial accordion addressing key client questions:
 
-- Services
-- Project process
-- Platforms
-- Campaign timelines
-- Starting a project
-
-The FAQ uses clean editorial rows with smooth expand/collapse interactions.
+- Studio capabilities and service scope
+- Project onboarding and discovery sprint
+- Omnichannel platform coverage
+- Campaign launch and turnaround timelines
+- Engagement kick-off procedure
 
 ### 07 — Contact
 
-A project inquiry section with fields for:
-
-- Name
-- Email
-- Company
-- Service
-- Budget
-- Project Requirements
-
-The form includes frontend validation, loading feedback, and a confirmation state.
+A project inquiry section allowing clients to select services, specify budget tiers, and submit project briefs with instant validation.
 
 ### 08 — Footer
 
-The footer includes:
+Includes:
 
-- RV CANVAS branding
-- Navigation
-- Social links
-- Copyright
-- Legal information
+- ADSPARK studio identity and tagline
+- Anchor navigation links
+- Social channel links (Instagram, LinkedIn, X)
+- Codified studio standards and legal modals (Privacy, Terms)
+- Studio copyright notice
 
 ## Design System
 
-| Element | Value |
-|---|---|
-| Warm Off-White | `#F4F1EA` |
-| Deep Black | `#111111` |
-| Dark Charcoal | `#1C1C1A` |
-| Muted Terracotta | `#C84B35` |
-| Soft Beige | `#D9D1C3` |
+The visual identity uses a curated editorial palette:
 
-The interface intentionally avoids excessive gradients, neon colors, glassmorphism, and generic SaaS visual patterns.
+| Token | Hex | Role |
+|---|---|---|
+| Warm Off-White | `#F4F1EA` | Primary canvas & section backgrounds |
+| Deep Black | `#111111` | Primary typography & high-contrast elements |
+| Dark Charcoal | `#1C1C1A` | Secondary surfaces & dark footer |
+| Muted Terracotta | `#C84B35` | Accent highlights & spark mark |
+| Soft Beige | `#D9D1C3` | Subtle hairline dividers & borders |
 
-The visual direction is inspired by premium editorial design, modern creative studios, and art-directed digital experiences.
+The design strictly avoids generic AI SaaS aesthetics, bright neon colors, and excessive glassmorphism in favor of high-craft editorial restraint.
 
 ## Tech Stack
 
-- **React**
-- **Vite**
-- **JavaScript / JSX**
-- **CSS**
-- **Lucide Icons**
-- **Vercel**
+- **React 19** — Component-driven user interface architecture
+- **Vite 8** — Next-generation frontend tooling and fast HMR
+- **JavaScript (ES6+)** — Application logic and state management
+- **Vanilla CSS** — Custom editorial design system with CSS 3D transforms
+- **Lucide React** — Modern, lightweight SVG iconography
+- **Vercel** — Production deployment and edge hosting
 
-> Note: The interactive hero visual uses CSS-based 3D transforms and motion effects rather than requiring a heavy 3D model.
+> *Note: The hero centerpiece is engineered using pure CSS 3D perspective transforms (`perspective`, `rotateX`, `rotateY`) for lightweight, hardware-accelerated performance without requiring heavy external 3D libraries.*
 
 ## Responsive Design
 
-The website is designed for:
+The website is engineered across all standard screen sizes:
 
-- Mobile: `320px+`
-- Tablet: `768px+`
-- Desktop: `1200px+`
-- Large screens: `1920px+`
+- **Mobile**: `320px – 767px` (Compact navigation, stacked layouts, touch-friendly tap targets)
+- **Tablet**: `768px – 1199px` (Balanced multi-column grids and adjusted padding)
+- **Desktop**: `1200px – 1919px` (Full editorial layouts with expanded typography)
+- **Ultra-Wide**: `1920px+` (Max-width container constraints ensuring legibility)
 
-The mobile experience includes a compact navigation panel, responsive typography, stacked layouts, touch-friendly controls, and protection against horizontal overflow.
+## Getting Started
 
-## Accessibility
+### Prerequisites
 
-The project includes:
+- Node.js (version 18+ recommended)
+- npm or yarn
 
-- Semantic HTML structure
-- Accessible navigation controls
-- `aria-expanded` and `aria-controls` for interactive elements
-- Keyboard-friendly interactions
-- Reduced-motion support
-- Descriptive image alt text
-- Responsive touch interactions
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/prakharupadhyay03/adspark-digital-agency.git
+cd digital-marketing-agency
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the local development server with Hot Module Replacement (HMR):
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+
+### Production Build
+
+Compile and optimize the project for production:
+
+```bash
+npm run build
+```
+
+The output bundle will be generated in the `dist/` directory.
+
+### Preview Production Build
+
+Locally test the compiled production build:
+
+```bash
+npm run preview
+```
+
+### Code Quality
+
+Run the oxlint linter:
+
+```bash
+npm run lint
+```
 
 ## Project Structure
 
@@ -173,28 +201,52 @@ The project includes:
 digital-marketing-agency/
 │
 ├── public/
-│   ├── favicon.svg
-│   └── rv-canvas-logo.png
+│   ├── adspark-logo.svg        # ADSPARK vector brand mark
+│   ├── favicon.svg             # ADSPARK browser favicon
+│   └── icons.svg               # SVG sprite definitions
 │
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero3D.jsx
-│   │   ├── WhyRVCanvas.jsx
+│   ├── assets/                 # Static imagery
+│   ├── components/             # Reusable UI components
+│   │   ├── About.jsx
+│   │   ├── AboutServices.jsx
+│   │   ├── AgencyPhilosophyModal.jsx
+│   │   ├── BackToTop.jsx
+│   │   ├── BrandStrip.jsx
+│   │   ├── CampaignProcess.jsx
+│   │   ├── CaseStudyModal.jsx
+│   │   ├── Contact.jsx
+│   │   ├── FAQ.jsx
+│   │   ├── FeaturedCampaign.jsx
+│   │   ├── FeaturedWork.jsx
 │   │   ├── Footer.jsx
-│   │   └── ...
+│   │   ├── Hero.jsx
+│   │   ├── Hero3D.jsx
+│   │   ├── LegalModal.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Process.jsx
+│   │   ├── Results.jsx
+│   │   ├── ServiceModal.jsx
+│   │   ├── Services.jsx
+│   │   ├── Solutions.jsx
+│   │   ├── WhyAdSpark.jsx
+│   │   └── WhyChooseUs.jsx
 │   │
 │   ├── data/
-│   │   └── agencyData.js
+│   │   └── agencyData.js       # Centralized editorial content
 │   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
+│   ├── App.jsx                 # Main application layout
+│   ├── App.css                 # Editorial component styling
+│   ├── index.css               # Core design tokens & typography
+│   └── main.jsx                # React DOM entrypoint
 │
-├── public/
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+├── index.html                  # HTML entrypoint & SEO metadata
+├── package.json                # Project dependencies and scripts
+├── vercel.json                 # Vercel deployment configuration
+├── vite.config.js              # Vite configuration
+└── README.md                   # Project documentation
+```
+
+## License
+
+All rights reserved © 2026 ADSPARK. Independent Creative & Digital Studio.

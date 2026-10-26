@@ -69,7 +69,7 @@ export default function Footer({ onOpenLegal }) {
 
         {/* Bottom Copyright & Legal Line */}
         <div className="footer-bottom-strip">
-          <span>© 2026 RV Canvas. Independent Creative & Digital Studio.</span>
+          <span>© 2026 AdSpark. Independent Creative & Digital Studio.</span>
           <div className="footer-legal-inline">
             <button onClick={() => onOpenLegal('privacy')} className="legal-link-btn">Privacy</button>
             <span>/</span>

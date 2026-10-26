@@ -54,7 +54,7 @@ export default function LegalModal({ legalType, onClose }) {
         {/* Modal Content Area */}
         <div className="modal-content-area">
           <p className="modal-lead-summary">
-            Codified Standards • RV Canvas Independent Creative & Digital Studio (2026 Edition)
+            Codified Standards • AdSpark Independent Creative & Digital Studio (2026 Edition)
           </p>
 
           <div className="modal-copy-block">
@@ -62,7 +62,7 @@ export default function LegalModal({ legalType, onClose }) {
               <>
                 <h4 className="modal-section-label">1. DATA SOVEREIGNTY & PRIVACY</h4>
                 <p>
-                  All prospective client information, CRM records, and confidential project briefs shared with RV Canvas remain the unconditional, exclusive property of the client. We do not sell, rent, monetize, or repurpose client information.
+                  All prospective client information, CRM records, and confidential project briefs shared with AdSpark remain the unconditional, exclusive property of the client. We do not sell, rent, monetize, or repurpose client information.
                 </p>
                 
                 <h4 className="modal-section-label">2. ATTRIBUTION & TRACKING COMPLIANCE</h4>
@@ -84,7 +84,7 @@ export default function LegalModal({ legalType, onClose }) {
 
                 <h4 className="modal-section-label">2. MEDIA BUYING TRANSPARENCY</h4>
                 <p>
-                  RV Canvas operates strictly under transparent media buying terms. All advertising platform accounts (Google Ads, Meta Business Manager, TikTok Ads) remain owned by and registered directly under the client's corporate entities.
+                  AdSpark operates strictly under transparent media buying terms. All advertising platform accounts (Google Ads, Meta Business Manager, TikTok Ads) remain owned by and registered directly under the client's corporate entities.
                 </p>
 
                 <h4 className="modal-section-label">3. PERFORMANCE BENCHMARKS & MARKET DYNAMICS</h4>

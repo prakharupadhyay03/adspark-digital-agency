@@ -108,7 +108,7 @@ export default function Contact({ selectedRequirement, onClearRequirement }) {
             <div className="contact-fast-details">
               <div className="fast-detail-item">
                 <span className="f-label">DIRECT EMAIL</span>
-                <a href="mailto:hello@rvcanvas.com" className="f-val">hello@rvcanvas.com</a>
+                <a href="mailto:hello@adspark.com" className="f-val">hello@adspark.com</a>
               </div>
               <div className="fast-detail-item">
                 <span className="f-label">LOCATION</span>

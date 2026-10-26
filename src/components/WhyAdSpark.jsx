@@ -1,4 +1,4 @@
-export default function WhyRVCanvas() {
+export default function WhyAdSpark() {
   const items = [];
   return (
     <section className="editorial-section why-editorial-section">
@@ -9,7 +9,7 @@ export default function WhyRVCanvas() {
             <div className="eyebrow-label">OUR DISTINCT POSITION</div>
             <h2 className="why-hero-text">
               WHY<br />
-              <span className="serif-italic">RV CANVAS?</span>
+              <span className="serif-italic">ADSPARK?</span>
             </h2>
             <p className="why-lead-paragraph">
               We reject the false dichotomy between pure creative vanity and uninspired performance grinding. We believe the biggest commercial growth happens at their intersection.

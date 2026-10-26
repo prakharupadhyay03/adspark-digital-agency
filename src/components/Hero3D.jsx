@@ -173,11 +173,11 @@ export default function Hero3D() {
         {/* Subtle physical depth edge effect */}
         <div className="monolith-depth-edge" />
 
-        {/* Main 3D Poster Canvas */}
+        {/* Main 3D Poster Surface */}
         <div className="monolith-card-surface">
           {/* Header Row */}
           <div className="poster-meta-top">
-            <span className="poster-serial">RV CANVAS • 01</span>
+            <span className="poster-serial">ADSPARK • 01</span>
             <span className="poster-tag">CAMPAIGN DIRECTION</span>
           </div>
 
@@ -197,7 +197,7 @@ export default function Hero3D() {
           {/* Bottom Editorial Content */}
           <div className="poster-content-bottom">
             <div className="poster-brand-row">
-              <span className="poster-wordmark">RV CANVAS</span>
+              <span className="poster-wordmark">ADSPARK</span>
               <span className="poster-year">EST. 2026</span>
             </div>
             <p className="poster-caption">
